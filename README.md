@@ -1,15 +1,15 @@
-Домашнее задание к занятию «Система мониторинга Zabbix» - `Avvakumov Oleg`
+###Домашнее задание к занятию «Система мониторинга Zabbix» - `Avvakumov Oleg`
 
 ---
 
 ### Задание 1
 
-'Установите Zabbix Server с веб-интерфейсом.
+Установите Zabbix Server с веб-интерфейсом.
 Процесс выполнения
 Выполняя ДЗ, сверяйтесь с процессом отражённым в записи лекции.
 Установите PostgreSQL. Для установки достаточна та версия, что есть в системном репозитороии Debian 11.
 Пользуясь конфигуратором команд с официального сайта, составьте набор команд для установки последней версии Zabbix с поддержкой PostgreSQL и Apache.
-Выполните все необходимые команды для установки Zabbix Server и Zabbix Web Server.'
+Выполните все необходимые команды для установки Zabbix Server и Zabbix Web Server.
 
 
 1. `$ sudo -s`
@@ -24,21 +24,21 @@
 10. `systemctl restart zabbix-server zabbix-agent apache2`11. `systemctl enable zabbix-server zabbix-agent apache2`
 
 
-![1](1.png)`
-![2](2.png)`
-![3](3.png)`
+![1](./img/1.png)`
+![2](./img/2.png)`
+![3](./img/3.png)`
 
 ---
 
 ### Задание 2
 
-'Установите Zabbix Agent на два хоста.
+Установите Zabbix Agent на два хоста.
 Процесс выполнения
 Выполняя ДЗ, сверяйтесь с процессом отражённым в записи лекции.
 Установите Zabbix Agent на 2 вирт.машины, одной из них может быть ваш Zabbix Server.
 Добавьте Zabbix Server в список разрешенных серверов ваших Zabbix Agentов.
 Добавьте Zabbix Agentов в раздел Configuration > Hosts вашего Zabbix Servera.
-Проверьте, что в разделе Latest Data начали появляться данные с добавленных агентов.'
+Проверьте, что в разделе Latest Data начали появляться данные с добавленных агентов.
 
 ```
 1. Добавляем репозиторий Zabbix 7.0 для Ubuntu
@@ -72,17 +72,17 @@ sudo systemctl enable zabbix-agent
 sudo systemctl status zabbix-agent
 
 ```
-![1](4.png)
-![2](5.png)
-![3](6.png)
-![4](7.png)
-![5](8.png)
-![6](9.png)
-![7](10.png)
-![8](11.png)
-![9](12.png)
-![10](13.png)
-![11](14.png)
+![1](./img/4.png)
+![2](./img/5.png)
+![3](./img/6.png)
+![4](./img/7.png)
+![5](./img/8.png)
+![6](./img/9.png)
+![7](./img/10.png)
+![8](./img/11.png)
+![9](./img/12.png)
+![10](./img/13.png)
+![11](./img/14.png)
 ---
 
 
